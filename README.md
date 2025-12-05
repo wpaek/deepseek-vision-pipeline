@@ -70,11 +70,7 @@ JSONL with Q/A pairs:
 }
 ```
 
-## Performance
-
-- VRAM: ~10-12GB (tiny model)
-- Speed: ~2-3 images/sec (single GPU)
-
 ## License
 
 MIT
+
