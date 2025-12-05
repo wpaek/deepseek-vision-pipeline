@@ -4,7 +4,8 @@ Vision-language data synthesis using DeepSeek-OCR. Single model for OCR, object 
 
 ## Features
 
-- Unified DeepSeek-OCR model for all vision tasks
+- DeepSeek-OCR model for all vision tasks
+    - Comparative to github.com/shu4dev/DCVLR
 - Smart binning into Text/Object/Commonsense categories
 - LLM-based Q/A generation with reasoning
 - Batch processing support
@@ -73,4 +74,5 @@ JSONL with Q/A pairs:
 ## License
 
 MIT
+
 
