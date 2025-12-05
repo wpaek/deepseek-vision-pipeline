@@ -1,0 +1,32 @@
+# DeepSeek Vision Pipeline Configuration
+
+# Model Settings
+model:
+  name: "deepseek-ai/DeepSeek-OCR"
+  size: "tiny"  # tiny, small, base, large
+  device: "cuda"
+  dtype: "bfloat16"
+
+# Binning Thresholds
+binning:
+  text_threshold: 50  # Min OCR text length for Text bin
+  object_threshold: 5  # Min objects for Object bin
+  bins_ratio: [0.4, 0.4, 0.2]  # Text, Object, Commonsense
+
+# Synthesis Settings
+synthesis:
+  llm_model: "tiiuae/falcon-7b-instruct"
+  max_tokens: 512
+  temperature: 0.7
+  batch_size: 4
+
+# Validation Settings
+validation:
+  min_question_length: 5
+  min_answer_length: 1
+  min_reasoning_length: 10
+
+# Output Settings
+output:
+  save_intermediate: true
+  format: "jsonl"
